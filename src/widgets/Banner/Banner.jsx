@@ -1,4 +1,3 @@
-import React from 'react'
 import s from './Banner.module.scss'
 import decor from './pic/decor.svg'
 import decorbig from './pic/decorbig.svg'

@@ -1,4 +1,3 @@
-import React from 'react'
 import s from './Footer.module.scss'
 import twitter from './pic/twitter.svg'
 import facebook from './pic/facebook.svg'
@@ -18,16 +17,9 @@ const Footer = () => {
           <h1 className={s.text}>
             STAY UPTO DATE ABOUT OUR LATEST OFFERS
           </h1>
-
           <div className={s.sub}>
-            <input
-              className={s.input}
-              type="text"
-              placeholder="Enter your email address"
-            />
-            <button className={s.btn}>
-              Subscribe to Newsletter
-            </button>
+            <input className={s.input} type="text" placeholder="Enter your email address" />
+            <button className={s.btn}>Subscribe to Newsletter</button>
           </div>
         </section>
       </div>
@@ -42,45 +34,44 @@ const Footer = () => {
                 your style and which you’re
                 proud to wear. From women to men.
               </p>
-
               <div className={s.imgs}>
-                <img className={s.img} src={twitter} alt="" />
-                <img className={s.img} src={facebook} alt="" />
-                <img className={s.img} src={instagram} alt="" />
-                <img className={s.img} src={github} alt="" />
+                <a href="#"><img className={s.img} src={twitter} alt="Twitter" /></a>
+                <a href="#"><img className={s.img} src={facebook} alt="Facebook" /></a>
+                <a href="#"><img className={s.img} src={instagram} alt="Instagram" /></a>
+                <a href="#"><img className={s.img} src={github} alt="GitHub" /></a>
               </div>
             </div>
 
             <div className={s.items}>
               <h6>Company</h6>
-              <p>About</p>
-              <p>Features</p>
-              <p>Works</p>
-              <p>Career</p>
+              <a href="#">About</a>
+              <a href="#">Features</a>
+              <a href="#">Works</a>
+              <a href="#">Career</a>
             </div>
 
             <div className={s.items}>
               <h6>Help</h6>
-              <p>Customer Support</p>
-              <p>Delivery Details</p>
-              <p>Terms & Conditions</p>
-              <p>Privacy Policy</p>
+              <a href="#">Customer Support</a>
+              <a href="#">Delivery Details</a>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Privacy Policy</a>
             </div>
 
             <div className={s.items}>
               <h6>FAQ</h6>
-              <p>Account</p>
-              <p>Manage Deliveries</p>
-              <p>Orders</p>
-              <p>Payments</p>
+              <a href="#">Account</a>
+              <a href="#">Manage Deliveries</a>
+              <a href="#">Orders</a>
+              <a href="#">Payments</a>
             </div>
 
             <div className={s.items}>
               <h6>Resources</h6>
-              <p>Free eBooks</p>
-              <p>Development Tutorial</p>
-              <p>How to - Blog</p>
-              <p>Youtube Playlist</p>
+              <a href="#">Free eBooks</a>
+              <a href="#">Development Tutorial</a>
+              <a href="#">How to - Blog</a>
+              <a href="#">Youtube Playlist</a>
             </div>
           </div>
 
@@ -88,13 +79,12 @@ const Footer = () => {
 
           <div className={s.down_footer}>
             <p>Shop.co © 2000-2023, All Rights Reserved</p>
-
             <div className={s.brands}>
-              <img className={s.brand} src={visa} alt="" />
-              <img className={s.brand} src={mastercard} alt="" />
-              <img className={s.brand} src={paypal} alt="" />
-              <img className={s.brand} src={apppay} alt="" />
-              <img className={s.brand} src={gpay} alt="" />
+              <img className={s.brand} src={visa} alt="Visa" />
+              <img className={s.brand} src={mastercard} alt="Mastercard" />
+              <img className={s.brand} src={paypal} alt="PayPal" />
+              <img className={s.brand} src={apppay} alt="Apple Pay" />
+              <img className={s.brand} src={gpay} alt="Google Pay" />
             </div>
           </div>
         </div>

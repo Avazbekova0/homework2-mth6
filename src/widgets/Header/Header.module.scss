@@ -9,6 +9,12 @@
   margin: 0;
   font-weight: 700;
   font-size: 32px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 .list {
@@ -24,6 +30,13 @@
   font-size: 16px;
   list-style: none;
   white-space: nowrap;
+  text-decoration: none;
+  color: var(--color-black);
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--color-gray);
+  }
 }
 
 .input {
@@ -32,12 +45,22 @@
   box-sizing: border-box;
   border-radius: 62px;
   background-color: var(--bg-primary);
-  border: none;
+  border: 1px solid transparent;
   background-image: url('./pic/search.svg');
   background-repeat: no-repeat;
   background-position: 20px center;
   padding: 0 20px 0 45px;
   background-size: 12px;
+  outline: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #eeeeee;
+  }
+
+  &:focus {
+    border-color: var(--color-black);
+  }
 }
 
 .log {
@@ -52,4 +75,107 @@
   height: 24px;
   object-fit: contain;
   cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+
+  &:hover {
+    transform: scale(1.15);
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header {
+    gap: 20px;
+  }
+
+  .list {
+    gap: 15px;
+  }
+
+  .input {
+    width: 250px;
+  }
+}
+
+@media (max-width: 850px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .nav {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .list {
+    width: max-content;
+    gap: 25px;
+    padding: 10px 0;
+  }
+
+  .input {
+    flex: 1;
+    width: auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .header {
+    padding: 12px;
+    gap: 15px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .input {
+    order: 3;
+    width: 100%;
+    flex: 0 0 100%;
+    height: 44px;
+  }
+
+  .nav {
+    order: 4;
+  }
+
+  .list {
+    gap: 20px;
+  }
+
+  .item {
+    font-size: 14px;
+  }
+
+  .log {
+    margin-left: auto;
+    gap: 10px;
+  }
+
+  .log img {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+@media (max-width: 360px) {
+  .title {
+    font-size: 22px;
+  }
+
+  .header {
+    padding: 10px;
+  }
+
+  .list {
+    gap: 15px;
+  }
 }

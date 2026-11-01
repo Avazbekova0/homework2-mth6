@@ -1,17 +1,15 @@
-import React from 'react'
 import './styles/global.scss'
-import { Header } from '../widgets/Header'
-import { Banner } from '../widgets/Banner'
-import { Footer } from '../widgets/Footer'
+import { AppRouter } from './router/AppRouter'
+import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
+
+const queryClient = new QueryClient();
 
 const App = () => {
   return (
-    <div>
-      <Header/>
-      <Banner/>
-      <Footer/>
-    </div>
-  )
+    <QueryClientProvider client={queryClient}>
+      <AppRouter />
+    </QueryClientProvider>
+  );
 }
 
 export default App

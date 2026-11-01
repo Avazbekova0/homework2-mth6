@@ -24,3 +24,16 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.title{
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
